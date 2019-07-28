@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 
-public class MenuController : MonoBehaviour
+public class MenuRadialController : MonoBehaviour
 {
     List<Button> childButtons = new List<Button>();
     Vector2[] buttonGoalPos;
@@ -38,7 +38,11 @@ public class MenuController : MonoBehaviour
         this.GetComponent<RectTransform>().pivot = new Vector2(0.5f,0.5f); 
     }
 
+    private void EnableDisableButton(){
+        this.GetComponent<Button>().interactable = !this.GetComponent<Button>().interactable;
+    }
     public void OpenMenu(){
+        this.EnableDisableButton();
         this.openMenu = !this.openMenu;
         for(int i=0;i <= this.childButtons.Count-1;i++){
             if(this.openMenu){
@@ -77,5 +81,6 @@ public class MenuController : MonoBehaviour
                 b.gameObject.SetActive(false);
             }
         }
+        this.EnableDisableButton();
     }
 }
