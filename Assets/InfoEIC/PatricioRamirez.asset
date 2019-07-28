@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e23b2a7760f7e6a47bd37ed259087bd3, type: 3}
+  m_Name: PatricioRamirez
+  m_EditorClassIdentifier: 
+  name: "Patricio Ram\xEDrez Correa"
+  grado: "Doctor en Econom\xEDa y Administraci\xF3n de Empresas"
+  email: patricio.ramirez@ucn.cl
+  areaDisciplinar: "Sistemas de Informaci\xF3n  "
+  fotoPerfil: {fileID: 21300000, guid: cb18f23f01ba8bb4aa0b729cf2b2d7bd, type: 3}
+  researchGate: 1
+  RGInfo: https://www.researchgate.net/profile/Patricio_Ramirez-Correa
+  googleScholar: 1
+  GSInfo: 'https://scholar.google.com/citations?user=7B-fmIoAAAAJ&hl=en '
+  externalLinks: 0
+  ELInfo: []

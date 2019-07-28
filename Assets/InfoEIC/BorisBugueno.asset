@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e23b2a7760f7e6a47bd37ed259087bd3, type: 3}
+  m_Name: BorisBugueno
+  m_EditorClassIdentifier: 
+  name: "Boris Bugue\xF1o Bugue\xF1o"
+  grado: "Master(c) en Organizaci\xF3n de Empresas y Proyectos Industriales"
+  email: bbugueno@ucn.cl
+  areaDisciplinar: "Estad\xEDstica y TI "
+  fotoPerfil: {fileID: 21300000, guid: 952476b6ba449fc4a878ec3a041e5aaa, type: 3}
+  researchGate: 0
+  RGInfo: 
+  googleScholar: 0
+  GSInfo: 
+  externalLinks: 0
+  ELInfo: []
