@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class SubButtonController : MonoBehaviour
 {
     private string sceneButton;
+    private int idPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,17 +19,15 @@ public class SubButtonController : MonoBehaviour
         
     }
 
+    public void SetIdPanel(int idx){
+        this.idPanel = idx;
+    }
+
     public void SetButtonScene(string scenename){
         this.sceneButton = scenename;
     }
 
     public void LoadButtonScene(){
-        if( this.sceneButton != null){
-            Debug.Log("sceneName to load: " + this.sceneButton);
-            //AppManager.instance.TestSingleton();
-            // SceneManager.LoadScene(this.sceneButton); 
-        }else{
-            Debug.Log("ERROR IN " + this.gameObject.name);
-        }
+        AppManager.instance.PanelSelected(this.idPanel); 
     }
 }

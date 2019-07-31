@@ -9,8 +9,8 @@ public class MenuRadialController : MonoBehaviour
     List<Button> childButtons = new List<Button>();
     Vector2[] buttonGoalPos;
     private bool openMenu = false;
-    private float intialAngle = 150 * Mathf.Deg2Rad; //ANGULO INICIAL (150°)
-    private float angleDistance = 50 * Mathf.Deg2Rad; //DISTANCIA ENTRE SUBBOTONES
+    private float intialAngle = 90 * Mathf.Deg2Rad; //ANGULO INICIAL (150°)
+    private float angleDistance = 60 * Mathf.Deg2Rad; //DISTANCIA ENTRE SUBBOTONES
     private int buttonDistance = 200;//radio
     private float speedAnimation = 4f;
     string[] pathScenes = {"1_EIC","2_STAFF","3_ICCI","4_ICI","5_GALERIA","6_RELLENO","7_RELLENO"};
@@ -22,10 +22,13 @@ public class MenuRadialController : MonoBehaviour
         this.childButtons = this.GetComponentsInChildren<Button>(true).Where(x=> x.gameObject.transform.parent != transform.parent).ToList();
         this.buttonGoalPos = new Vector2[this.childButtons.Count];
         for(int i=0;i<this.childButtons.Count;i++){
-            this.childButtons[i].gameObject.transform.position = this.transform.position;
-            this.childButtons[i].gameObject.GetComponent<Image>().color = new Color(1,1,1,0);
-            this.childButtons[i].gameObject.SetActive(false);
-            this.childButtons[i].GetComponent<SubButtonController>().SetButtonScene(this.pathScenes[i]);
+            GameObject go = this.childButtons[i].gameObject;
+            go.transform.position = this.transform.position;
+            go.GetComponent<Image>().color = new Color(1,1,1,0);
+            go.SetActive(false);
+            SubButtonController sbc = this.childButtons[i].GetComponent<SubButtonController>();
+            sbc.SetButtonScene(this.pathScenes[i]);
+            sbc.SetIdPanel(i);
             this.childButtons[i].interactable = false;
         }
         // foreach (Button b in this.childButtons)
@@ -38,11 +41,12 @@ public class MenuRadialController : MonoBehaviour
         this.GetComponent<RectTransform>().pivot = new Vector2(0.5f,0.5f); 
     }
 
-    private void EnableDisableButton(){
-        this.GetComponent<Button>().interactable = !this.GetComponent<Button>().interactable;
+    private void EnableDisableButton(bool value){
+        this.GetComponent<Button>().interactable = value;
     }
+
     public void OpenMenu(){
-        this.EnableDisableButton();
+        this.EnableDisableButton(false);
         this.openMenu = !this.openMenu;
         for(int i=0;i <= this.childButtons.Count-1;i++){
             if(this.openMenu){
@@ -59,6 +63,9 @@ public class MenuRadialController : MonoBehaviour
     private IEnumerator MoveButtons(){
         foreach(Button b in this.childButtons){
             b.gameObject.SetActive(true);
+            if(!this.openMenu){
+                b.interactable = false;
+            }
         }
         int loops=0;
         while(loops <= this.buttonDistance/speedAnimation){
@@ -80,7 +87,44 @@ public class MenuRadialController : MonoBehaviour
             {
                 b.gameObject.SetActive(false);
             }
+        }else{
+            foreach (Button b in this.childButtons)
+            {
+                b.interactable = true;
+            }
         }
-        this.EnableDisableButton();
+        this.EnableDisableButton(true);
+    }
+
+    public void StartEndAnimation(){
+        StartCoroutine(EndAnimation());
+    }
+
+    private IEnumerator EndAnimation(){
+        this.DisableAllButtons();
+        yield return new WaitForSeconds(0.05f);
+        int loops=0;
+        while(loops <= this.buttonDistance/speedAnimation){
+            yield return new WaitForSeconds(0.01f);
+            for(int i=0; i< this.childButtons.Count;i++){
+                Color c = this.childButtons[i].gameObject.GetComponent<Image>().color;
+                c.a = Mathf.Lerp(c.a,0,speedAnimation*1.5f*Time.deltaTime);
+                this.childButtons[i].gameObject.GetComponent<Image>().color = c;
+                this.childButtons[i].gameObject.transform.position = Vector2.Lerp(this.childButtons[i].gameObject.transform.position,this.transform.position,speedAnimation*1.5f*Time.deltaTime);
+            }
+            loops++;
+        }
+        foreach (Button b in this.childButtons)
+        {
+            b.gameObject.SetActive(false);
+        }
+        AppManager.instance.StartTransitionMenus();
+    }
+    
+    private void DisableAllButtons(){
+        this.EnableDisableButton(false);
+        foreach(Button b in this.childButtons){
+            b.interactable = false;
+        }
     }
 }
