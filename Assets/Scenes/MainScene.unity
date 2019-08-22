@@ -320,6 +320,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c43d508247f9d4e8abb31b6352fe14, type: 3}
+--- !u!224 &36954884 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1576901725}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &41637170 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4176947440685881697, guid: eaab82b059e5f9d45ae19cdd61ec9c03,
@@ -1758,6 +1764,8 @@ GameObject:
   - component: {fileID: 621263623}
   - component: {fileID: 621263622}
   - component: {fileID: 621263624}
+  - component: {fileID: 621263626}
+  - component: {fileID: 621263625}
   m_Layer: 5
   m_Name: Panel1
   m_TagString: Untagged
@@ -1775,7 +1783,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 36954884}
   m_Father: {fileID: 1809634383}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1834,6 +1843,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstTime: 1
+--- !u!114 &621263625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621263620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1367256648, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 36954884}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 2
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 0}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &621263626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621263620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 1
 --- !u!224 &631144407 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3586397448893365733, guid: c6c43d508247f9d4e8abb31b6352fe14,
@@ -5677,6 +5731,204 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1576901725
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 621263621}
+    m_Modifications:
+    - target: {fileID: 6335409171415032097, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_Name
+      value: PanelInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 4951
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.836
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409171415032096, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409170851697814, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409170851697816, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409170851697816, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_text
+      value: "\nHistoria\r\n\n\xBFQui\xE9nes Somos?\r\nLa Universidad Cat\xF3lica
+        del Norte, con 60 a\xF1os de vida, es una Instituci\xF3n de Derecho P\xFAblico,
+        inserta en el grupo de universidades de avanzada del Sistema Nacional de Educaci\xF3n
+        Superior y regida en sus supremas instancias por la Iglesia Cat\xF3lica.\r\n\r\nSustentada
+        en los valores del Humanismo Cristiano, tiene como misi\xF3n la constante
+        b\xFAsqueda de la verdad para contribuir al desarrollo de la persona, de la
+        sociedad y de la herencia cultural de la comunidad mediante la docencia, la
+        investigaci\xF3n y la extensi\xF3n.\r\n\r\nEsta Instituci\xF3n, nacida por
+        iniciativa de un grupo de sacerdotes de la Compa\xF1\xEDa de Jes\xFAs, y de
+        su benefactora la Sra. Berta Gonz\xE1lez de Astorga, inici\xF3 formalmente
+        sus funciones el 31 de mayo de 1956, siendo la octava universidad que se fund\xF3
+        en Chile y la tercera de vocaci\xF3n Cat\xF3lica.\r\n\r\nHistoria\r\nCon el
+        objetivo de servir desde los \xE1mbitos de la docencia, la investigaci\xF3n
+        y la extensi\xF3n, naci\xF3 la Universidad del Norte en 1956, gracias a la
+        entusiasta iniciativa de los sacerdotes de la Compa\xF1\xEDa de Jes\xFAs,
+        quienes lucharon con tes\xF3n para concretar este anhelo para los j\xF3venes
+        nortinos: una Universidad al servicio de la cultura, las ciencias y el desarrollo,
+        pero con una adhesi\xF3n plena a la fe cristiana. Este proyecto tuvo eco y
+        se pudo concretar, gracias al generoso aporte de la se\xF1ora Berta Gonz\xE1lez
+        de Astorga, quien don\xF3 los terrenos en que se erigi\xF3 la entonces Universidad
+        del Norte.\r\n\r\nCon una matr\xEDcula de 100 estudiantes y 20 profesores,
+        inici\xF3 sus clases el 25 de marzo de 1957, al alero de la Universidad Cat\xF3lica
+        de Valpara\xEDso. As\xED se mantuvo hasta 1964, a\xF1o en que fue reconocida
+        por el Ministerio de Educaci\xF3n, logrando su plena autonom\xEDa y convirti\xE9ndose
+        en la tercera universidad cat\xF3lica del pa\xEDs y la octava tradicional
+        de vocaci\xF3n p\xFAblica.\r\n\r\nSus logros\r\nDesde sus inicios, ha liderado
+        iniciativas de desarrollo, incrementando y diversificando su quehacer, a trav\xE9s
+        de la formaci\xF3n de profesionales y cient\xEDficos, desenvolvi\xE9ndose
+        con \xE9xito en los \xE1mbitos de investigaci\xF3n, en su misi\xF3n de agente
+        cultural y en su rol de formadora de recursos humanos, siempre atenta a las
+        demandas de car\xE1cter acad\xE9mico requeridos por su entorno social.\r\n\r\nEs
+        as\xED como actualmente, cuenta con una matr\xEDcula de m\xE1s de 12 mil estudiantes
+        y en los \xFAltimos a\xF1os ha hecho esfuerzos importantes por materializar
+        una variada oferta de Programas de Postgrado, Mag\xEDster y Doctorados, en
+        las diversas \xE1reas del conocimiento.\r\n\r\nM\xE1s del 80 por ciento de
+        su planta acad\xE9mica cuenta con estudios de postgrado, y ha logrado una
+        productividad cient\xEDfica importante con numerosos art\xEDculos publicados
+        en Revistas Indizadas y la obtenci\xF3n de patentes y licencias internacionales.\r\n\r\nTambi\xE9n
+        ha destacado su ubicaci\xF3n de privilegio en el concierto nacional en cuanto
+        a la adjudicaci\xF3n de proyectos del Fondo Nacional de Desarrollo Cient\xEDfico
+        y Tecnol\xF3gico (Fondecyt) y del Fondo de Fomento al Desarrollo Cient\xEDfico
+        y Tecnol\xF3gico (Fondef).\r\n\r\nTodos estos logros, sit\xFAan a la UCN dentro
+        de las Instituciones de Educaci\xF3n Superior de avanzada del pa\xEDs, transform\xE1ndola
+        en un referente cient\xEDfico y tecnol\xF3gico del Norte para Chile.\r\n\r\nSus
+        desaf\xEDos\r\nConsciente de las exigencias de un mundo globalizado, la UCN
+        orienta su quehacer en desarrollar y posicionar un Proyecto Educativo Distintivo
+        que permita a sus estudiantes generar competencias, habilidades y destrezas,
+        apoyadas en plataformas tecnol\xF3gicas que le faciliten la integraci\xF3n
+        laboral, promoviendo un perfil caracter\xEDstico del educando de la UCN, capaz
+        de integrar equipos de trabajo tanto a nivel nacional como internacional.\r\n\r\nLos
+        objetivos estrat\xE9gicos que gu\xEDan a la Universidad Cat\xF3lica del Norte,
+        est\xE1n contemplados en su Plan de Desarrollo Corporativo, que se alinean
+        y sustentan en la visi\xF3n que la UCN se ha propuesto y que es \u201Cser
+        reconocida como una universidad cat\xF3lica, de vanguardia y con vocaci\xF3n
+        social\u201D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409170851697816, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335409170851697816, guid: 66783f6ecbef7524d9f89b2238719ea8,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 32
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66783f6ecbef7524d9f89b2238719ea8, type: 3}
 --- !u!224 &1595142432 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4176947440685881697, guid: eaab82b059e5f9d45ae19cdd61ec9c03,

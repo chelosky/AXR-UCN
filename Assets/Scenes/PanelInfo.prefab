@@ -1,0 +1,285 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6335409170851697814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6335409170851697817}
+  - component: {fileID: 6335409170851697819}
+  - component: {fileID: 6335409170851697816}
+  m_Layer: 5
+  m_Name: TextMeshPro Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6335409170851697817
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6335409170851697814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6335409171415032096}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.04615818, y: 0}
+  m_AnchorMax: {x: 0.94366175, y: 0.87681735}
+  m_AnchoredPosition: {x: -1.4000244, y: 460.7}
+  m_SizeDelta: {x: 5, y: 446.7}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6335409170851697819
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6335409170851697814}
+  m_CullTransparentMesh: 0
+--- !u!114 &6335409170851697816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6335409170851697814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_text: "Historia\r\n\n\xBFQui\xE9nes Somos?\r\nLa Universidad Cat\xF3lica del Norte,
+    con 60 a\xF1os de vida, es una Instituci\xF3n de Derecho P\xFAblico, inserta en
+    el grupo de universidades de avanzada del Sistema Nacional de Educaci\xF3n Superior
+    y regida en sus supremas instancias por la Iglesia Cat\xF3lica.\r\n\r\nSustentada
+    en los valores del Humanismo Cristiano, tiene como misi\xF3n la constante b\xFAsqueda
+    de la verdad para contribuir al desarrollo de la persona, de la sociedad y de
+    la herencia cultural de la comunidad mediante la docencia, la investigaci\xF3n
+    y la extensi\xF3n.\r\n\r\nEsta Instituci\xF3n, nacida por iniciativa de un grupo
+    de sacerdotes de la Compa\xF1\xEDa de Jes\xFAs, y de su benefactora la Sra. Berta
+    Gonz\xE1lez de Astorga, inici\xF3 formalmente sus funciones el 31 de mayo de 1956,
+    siendo la octava universidad que se fund\xF3 en Chile y la tercera de vocaci\xF3n
+    Cat\xF3lica.\r\n\r\nHistoria\r\nCon el objetivo de servir desde los \xE1mbitos
+    de la docencia, la investigaci\xF3n y la extensi\xF3n, naci\xF3 la Universidad
+    del Norte en 1956, gracias a la entusiasta iniciativa de los sacerdotes de la
+    Compa\xF1\xEDa de Jes\xFAs, quienes lucharon con tes\xF3n para concretar este
+    anhelo para los j\xF3venes nortinos: una Universidad al servicio de la cultura,
+    las ciencias y el desarrollo, pero con una adhesi\xF3n plena a la fe cristiana.
+    Este proyecto tuvo eco y se pudo concretar, gracias al generoso aporte de la se\xF1ora
+    Berta Gonz\xE1lez de Astorga, quien don\xF3 los terrenos en que se erigi\xF3 la
+    entonces Universidad del Norte.\r\n\r\nCon una matr\xEDcula de 100 estudiantes
+    y 20 profesores, inici\xF3 sus clases el 25 de marzo de 1957, al alero de la Universidad
+    Cat\xF3lica de Valpara\xEDso. As\xED se mantuvo hasta 1964, a\xF1o en que fue
+    reconocida por el Ministerio de Educaci\xF3n, logrando su plena autonom\xEDa y
+    convirti\xE9ndose en la tercera universidad cat\xF3lica del pa\xEDs y la octava
+    tradicional de vocaci\xF3n p\xFAblica.\r\n\r\nSus logros\r\nDesde sus inicios,
+    ha liderado iniciativas de desarrollo, incrementando y diversificando su quehacer,
+    a trav\xE9s de la formaci\xF3n de profesionales y cient\xEDficos, desenvolvi\xE9ndose
+    con \xE9xito en los \xE1mbitos de investigaci\xF3n, en su misi\xF3n de agente
+    cultural y en su rol de formadora de recursos humanos, siempre atenta a las demandas
+    de car\xE1cter acad\xE9mico requeridos por su entorno social.\r\n\r\nEs as\xED
+    como actualmente, cuenta con una matr\xEDcula de m\xE1s de 12 mil estudiantes
+    y en los \xFAltimos a\xF1os ha hecho esfuerzos importantes por materializar una
+    variada oferta de Programas de Postgrado, Mag\xEDster y Doctorados, en las diversas
+    \xE1reas del conocimiento.\r\n\r\nM\xE1s del 80 por ciento de su planta acad\xE9mica
+    cuenta con estudios de postgrado, y ha logrado una productividad cient\xEDfica
+    importante con numerosos art\xEDculos publicados en Revistas Indizadas y la obtenci\xF3n
+    de patentes y licencias internacionales.\r\n\r\nTambi\xE9n ha destacado su ubicaci\xF3n
+    de privilegio en el concierto nacional en cuanto a la adjudicaci\xF3n de proyectos
+    del Fondo Nacional de Desarrollo Cient\xEDfico y Tecnol\xF3gico (Fondecyt) y del
+    Fondo de Fomento al Desarrollo Cient\xEDfico y Tecnol\xF3gico (Fondef).\r\n\r\nTodos
+    estos logros, sit\xFAan a la UCN dentro de las Instituciones de Educaci\xF3n Superior
+    de avanzada del pa\xEDs, transform\xE1ndola en un referente cient\xEDfico y tecnol\xF3gico
+    del Norte para Chile.\r\n\r\nSus desaf\xEDos\r\nConsciente de las exigencias de
+    un mundo globalizado, la UCN orienta su quehacer en desarrollar y posicionar un
+    Proyecto Educativo Distintivo que permita a sus estudiantes generar competencias,
+    habilidades y destrezas, apoyadas en plataformas tecnol\xF3gicas que le faciliten
+    la integraci\xF3n laboral, promoviendo un perfil caracter\xEDstico del educando
+    de la UCN, capaz de integrar equipos de trabajo tanto a nivel nacional como internacional.\r\n\r\nLos
+    objetivos estrat\xE9gicos que gu\xEDan a la Universidad Cat\xF3lica del Norte,
+    est\xE1n contemplados en su Plan de Desarrollo Corporativo, que se alinean y sustentan
+    en la visi\xF3n que la UCN se ha propuesto y que es \u201Cser reconocida como
+    una universidad cat\xF3lica, de vanguardia y con vocaci\xF3n social\u201D."
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_textAlignment: 264
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: 1849
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_isTextTruncated: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_textInfo:
+    textComponent: {fileID: 6335409170851697816}
+    characterCount: 3916
+    spriteCount: 0
+    spaceCount: 625
+    wordCount: 614
+    linkCount: 0
+    lineCount: 193
+    pageCount: 1
+    materialCount: 1
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &6335409171415032097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6335409171415032096}
+  - component: {fileID: 6335409171415032098}
+  - component: {fileID: 6335409171415032099}
+  m_Layer: 5
+  m_Name: PanelInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6335409171415032096
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6335409171415032097}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6335409170851697817}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.836}
+  m_AnchoredPosition: {x: 1.1999512, y: -1774.2219}
+  m_SizeDelta: {x: 3, y: 4951}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6335409171415032098
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6335409171415032097}
+  m_CullTransparentMesh: 0
+--- !u!114 &6335409171415032099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6335409171415032097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.16862746, g: 0.18039216, b: 0.2, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
