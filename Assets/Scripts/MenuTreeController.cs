@@ -6,9 +6,10 @@ using System.Linq;
 public class MenuTreeController : MonoBehaviour
 {
     List<Button> childButtons = new List<Button>();
-    Vector2[] buttonGoalPos;
+    [SerializeField]List<RectTransform> positionFinalButtons = new List<RectTransform>();
+    Vector3[] buttonGoalPos;
     private bool openMenu = false;
-    private int buttonDistance = 60;//distancia entre botones
+    private int buttonDistance = 100;//distancia entre botones
     private float speedAnimation = 3f;
     string[] pathScenes = {"1_EIC","2_STAFF","3_ICCI","4_ICI","5_GALERIA","6_RELLENO","7_RELLENO"};
     
@@ -17,9 +18,10 @@ public class MenuTreeController : MonoBehaviour
     {
         //Obtenemos todos los hijos del main button
         this.childButtons = this.GetComponentsInChildren<Button>(true).Where(x=> x.gameObject.transform.parent != transform.parent).ToList();
-        this.buttonGoalPos = new Vector2[this.childButtons.Count];
+        this.buttonGoalPos = new Vector3[this.childButtons.Count];
         for(int i=0;i<this.childButtons.Count;i++){
             GameObject go = this.childButtons[i].gameObject;
+            this.positionFinalButtons.Add(this.transform.Find("Position"+i).GetComponent<RectTransform>());
             go.transform.position = this.transform.position;
             go.GetComponent<Image>().color = new Color(1,1,1,0);
             go.SetActive(false);
@@ -81,14 +83,17 @@ public class MenuTreeController : MonoBehaviour
         this.EnableDisableButton(false);
         float baseAngle = 270 * Mathf.Deg2Rad; //ANGULO BASE (270°)
         this.openMenu = !this.openMenu;
-        float offset = 30f;
+        float offset = 12f;
+        float factor = 0.2f;
         for(int i=0;i <= this.childButtons.Count-1;i++){
             if(this.openMenu){
                 float xpos = 0;
-                float ypos = -offset -this.buttonDistance*(i) - this.GetComponent<RectTransform>().sizeDelta.y * 0.5f - this.childButtons[i].GetComponent<RectTransform>().sizeDelta.y * 0.5f;
-                this.buttonGoalPos[i] = new Vector2(this.transform.position.x + xpos,this.transform.position.y + ypos);
+                float ypos = -offset -this.buttonDistance*(i) - this.GetComponent<RectTransform>().sizeDelta.y * factor - this.childButtons[i].GetComponent<RectTransform>().sizeDelta.y * factor;
+                // this.buttonGoalPos[i] = new Vector3(this.transform.position.x + xpos,this.transform.position.y + ypos,this.transform.position.z);
+                this.buttonGoalPos[i] = this.positionFinalButtons[i].localPosition;
             }else{
-                this.buttonGoalPos[i]= this.transform.position;
+                // this.buttonGoalPos[i]= this.transform.position;
+                this.buttonGoalPos[i] = new Vector3(0f,0f,0f);
             }
         }
         StartCoroutine(MoveButtons());
@@ -112,7 +117,9 @@ public class MenuTreeController : MonoBehaviour
                     c.a = Mathf.Lerp(c.a,0,speedAnimation*Time.deltaTime);
                 }
                 this.childButtons[i].gameObject.GetComponent<Image>().color = c;
-                this.childButtons[i].gameObject.transform.position = Vector2.Lerp(this.childButtons[i].gameObject.transform.position,this.buttonGoalPos[i],speedAnimation*Time.deltaTime);
+                // this.childButtons[i].gameObject.transform.position = Vector3.Lerp(this.childButtons[i].gameObject.transform.position,this.buttonGoalPos[i],speedAnimation*Time.deltaTime);
+                this.childButtons[i].GetComponent<RectTransform>().localPosition = Vector3.Lerp(this.childButtons[i].gameObject.GetComponent<RectTransform>().localPosition,this.buttonGoalPos[i],speedAnimation*Time.deltaTime);
+                this.childButtons[i].GetComponent<RectTransform>().localPosition = new Vector3(this.childButtons[i].GetComponent<RectTransform>().localPosition.x,this.childButtons[i].GetComponent<RectTransform>().localPosition.y,0f);
             }
             loops++;
         }
