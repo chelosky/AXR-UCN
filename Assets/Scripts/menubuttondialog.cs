@@ -8,4 +8,8 @@ public class menubuttondialog : MonoBehaviour
     public void ActivateButton(){
         _MN.ACTIVEBUTTON();
     }
+
+    public void LoadNextScene(){
+        _MN.loadNextSceneFinal();
+    }
 }

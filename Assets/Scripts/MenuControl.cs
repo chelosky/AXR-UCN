@@ -9,6 +9,7 @@ public class MenuControl : MonoBehaviour
     private bool activoMesaje = false;
     public GameObject infoMensaje;
     public GameObject buttonDialog;
+    public GameObject go_Fader;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +38,10 @@ public class MenuControl : MonoBehaviour
     }
 
     public void loadSceneFinal(){
+          this.go_Fader.GetComponent<Animator>().SetTrigger("FADEOUT");
+    }
+
+    public void loadNextSceneFinal(){
           SceneManager.LoadScene("MainScene");
     }
 
