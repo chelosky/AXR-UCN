@@ -87,8 +87,8 @@ public class MenuTreeController : MonoBehaviour
         float factor = 0.2f;
         for(int i=0;i <= this.childButtons.Count-1;i++){
             if(this.openMenu){
-                float xpos = 0;
-                float ypos = -offset -this.buttonDistance*(i) - this.GetComponent<RectTransform>().sizeDelta.y * factor - this.childButtons[i].GetComponent<RectTransform>().sizeDelta.y * factor;
+                // float xpos = 0;
+                // float ypos = -offset -this.buttonDistance*(i) - this.GetComponent<RectTransform>().sizeDelta.y * factor - this.childButtons[i].GetComponent<RectTransform>().sizeDelta.y * factor;
                 // this.buttonGoalPos[i] = new Vector3(this.transform.position.x + xpos,this.transform.position.y + ypos,this.transform.position.z);
                 this.buttonGoalPos[i] = this.positionFinalButtons[i].localPosition;
             }else{

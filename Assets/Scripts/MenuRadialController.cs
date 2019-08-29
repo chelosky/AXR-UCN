@@ -49,8 +49,8 @@ public class MenuRadialController : MonoBehaviour
         this.openMenu = !this.openMenu;
         for(int i=0;i <= this.childButtons.Count-1;i++){
             if(this.openMenu){
-                float xpos = Mathf.Cos(this.intialAngle + this.angleDistance*i) * this.buttonDistance;
-                float ypos = Mathf.Sin(this.intialAngle + this.angleDistance*i) * this.buttonDistance;
+                // float xpos = Mathf.Cos(this.intialAngle + this.angleDistance*i) * this.buttonDistance;
+                // float ypos = Mathf.Sin(this.intialAngle + this.angleDistance*i) * this.buttonDistance;
                 // this.buttonGoalPos[i] = new Vector3(this.transform.position.x + xpos,this.transform.position.y + ypos,this.transform.position.z);
                 this.buttonGoalPos[i] = this.positionFinalButtons[i].localPosition;
             }else{
