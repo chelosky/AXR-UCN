@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: AU8Q7///////AAABmX2TFh/LHUGPu7LbfxIwdjF4/+2glByNC2u0MKbystkyd/A2m0NYxJkQ0JwMf/7cvhSkd2rdBW8w6XVQmFvPq4ZiQ1dCMaFOcL/ZLaGJOopMTe1D/s9HzB5pX7j2yNm1TJRXtvKV3k9/97nMr8UjwMsskFn/lF+b/z23J4hztx4I9e1587dbFMWTNeVp3xGAfYDeTvp4PkXvZtseFnHNlH52133sf3NMqTljAvfgv81G7UWZSutuNlAIT1aKKFe53640p4p6fd1U0nZUI4LHgVar6fosOImTqht06CWUF1cLx+8FxVetTXGV9mWY90oKrLgE+u/wKiUg6+jcWvL0O1SiC38gw9m5kBx2/4pw8ojZ
-    ufoLicenseKey: QVNUUmFSVC8vLy8vQUFBQUtNZm5Qb2lTUFVzMm5wckdUR3VUaFZNY2tWK2tlLzFUdTRsS2pyNDc3OXIwWGw0dzhZTVdWVmpnMkVyaysvZGo5R25hMXBiZWk3dWd2SlMwa1JLOGFLR1lNZWhwUllodTF6WldFcStOSHUxWkt4UkNiZnJaOFhsU1FYMXFEeHFqbXQ3Y0pjQmpRd3IxZENxMEo3cUdqOEFaaHhIQksxOEIraDYwOHZ4SFU3TGh0SHExeWx0U2JRT3VjL1h6QVY5cWNHY1RrcFF1UmhRREFTZ1VZdGZVSjYrUEZHUVkvN2VRaHN0eHIyZ2pVbVRjb2Y1VVlYdENlUUgwanZEaStYMEJOaFRoSjJQWUFPV2wyNVczVXFiTHEvNmRMQ3E2N3NrWkhRWGhXYWxXaThtUnVlNWhBbHJqNHlGaHpaUERjaVJGK3lrcXVuTEJOZkw4eFlEbGo1T1JiL1duV09IazVublJmbXBpc1NhL0pYYjc=
+    vuforiaLicenseKey: AT17n1L/////AAABmbtarNwuCkWauFYtAW6ujtcH+LZ7IsFDQGCA+WNivNnXObso+QLCA1UVeZMUyyizmt0zN7OWk/QMV4cT/Ufv8LFKM9GZmGNtY5QlxHHtcdyHUpvfydAiK/PCntvLbWngeX/IUYXZpMlpcM+nZVxhzn+ysZOJoLRaq3WEBzeA8M+HCjt5C3jAXL1Wc1pZuBNRxm9anzm3EJdVuAPTG5QvOVctt6pIXrv7VtLgIZ/p4peaCeGGbzFJJIYN7K0FkQZeWTUMPtvVsh5VsFoKj4XgVvyavDrdqgU4bjos3Ex9Tan9O++Q//pgOwwmNZYn8DCra/rnEL6Vqk6W9zLl0z7ANsKinztT9kV0ip/KL3C6xK7s
+    ufoLicenseKey: QVgvZDVWYi8vLy8vQUFBQUtLZ1RUMWlZRlUrWXFIRENZU1BGTnVJT3g2QTc0Rk56S1NjRzE2aGlpSTdIZlpCc1ZZYUZXRVA0VUdmZGsvbjE0dGd2dktFYUF6alpJODRtUmNJTjEvc1ViVmc2K3MrZTJrcmxQMmUvcVR1dkVxY29FVnFlMDJLbkJ1T0pVeHk2WUZQd2xaK1dSV1V2UEUvRnJITzBNNmlUSlFOL0szTm9hamlLQ1Bmdk9wWkxNbnJpS1BwelBUWmhHMko0dnpLbHhzZWJOWTNLMjZuZ3JjSXVZYWRpa3IwMmN2NVFOWDdtNE5EQU04THRMUFVld01RdURVTHJOZTdiNDM3ZktIR2pIbUlRcGhqSGdaK1REQUxtSTliZzM2b3ljUTM4c1M3SUhhbk5obWlmK1RXdUVaMXZmbkNZNkpzdnd5UFp2MTJvV3U2cENZVXpheGNqSDBVV1NXRnNIOFVTMitRMlk4VTNvZHZMOWVtcUNIVzA=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
@@ -22,7 +22,7 @@ MonoBehaviour:
     useDelayedLoadingObjectTargets: 0
     modelTargetRecoWhileExtendedTracked: 1
     version: 8.3.8
-    eulaAcceptedVersions: '{"Values":["8.1","8.3","7.5"]}'
+    eulaAcceptedVersions: '{"Values":["7.5","8.1","8.3"]}'
   digitalEyewear:
     cameraOffset: 0.06
     distortionRenderingLayer: 31
