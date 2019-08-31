@@ -7,9 +7,11 @@ public class MenuTreeController : MonoBehaviour
 {
     List<Button> childButtons = new List<Button>();
     [SerializeField]List<RectTransform> positionFinalButtons = new List<RectTransform>();
+    [SerializeField]List<GameObject> textIcons = new List<GameObject>();
+
     Vector3[] buttonGoalPos;
     private bool openMenu = false;
-    private int buttonDistance = 100;//distancia entre botones
+    private int buttonDistance = 200;//distancia entre botones
     private float speedAnimation = 3f;
     string[] pathScenes = {"1_EIC","2_STAFF","3_ICCI","4_ICI","5_GALERIA","6_RELLENO","7_RELLENO"};
     
@@ -22,6 +24,7 @@ public class MenuTreeController : MonoBehaviour
         for(int i=0;i<this.childButtons.Count;i++){
             GameObject go = this.childButtons[i].gameObject;
             this.positionFinalButtons.Add(this.transform.Find("Position"+i).GetComponent<RectTransform>());
+            this.textIcons.Add(this.transform.Find("Text"+i).gameObject);
             go.transform.position = this.transform.position;
             go.GetComponent<Image>().color = new Color(1,1,1,0);
             go.SetActive(false);
@@ -37,6 +40,12 @@ public class MenuTreeController : MonoBehaviour
         StartCoroutine(MoveImage());
     }
 
+    private void SetTextsState(bool value){
+        for (int i = 0; i< this.textIcons.Count; i++)
+        {
+            this.textIcons[i].SetActive(value);
+        }
+    }
 
     private IEnumerator MoveImage(){
         yield return new WaitForSeconds(0.1f);
@@ -100,6 +109,9 @@ public class MenuTreeController : MonoBehaviour
     }
 
     private IEnumerator MoveButtons(){
+        if(!this.openMenu){
+            this.SetTextsState(false);
+        }
         foreach(Button b in this.childButtons){
             b.gameObject.SetActive(true);
             if(!this.openMenu){
@@ -129,6 +141,7 @@ public class MenuTreeController : MonoBehaviour
                 b.gameObject.SetActive(false);
             }
         }else{
+            this.SetTextsState(true);
             foreach (Button b in this.childButtons)
             {
                 if(AppManager.instance.Ready){

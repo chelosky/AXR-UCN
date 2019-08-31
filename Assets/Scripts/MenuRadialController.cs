@@ -13,7 +13,7 @@ public class MenuRadialController : MonoBehaviour
     private bool openMenu = false;
     private float intialAngle = 90 * Mathf.Deg2Rad; //ANGULO INICIAL (150°)
     private float angleDistance = 60 * Mathf.Deg2Rad; //DISTANCIA ENTRE SUBBOTONES
-    private int buttonDistance = 100;//radio
+    private int buttonDistance = 200;//radio
     private float speedAnimation = 4f;
     string[] pathScenes = {"1_EIC","2_STAFF","3_ICCI","4_ICI","5_GALERIA","6_RELLENO","7_RELLENO"};
 
